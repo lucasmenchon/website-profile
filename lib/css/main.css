@@ -62,5 +62,6 @@ body{height:100vh;}
 
 .word {
     color: #b6b6b6;
-    font-family: 'Nanum', monospace;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
 }
