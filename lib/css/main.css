@@ -1,0 +1,66 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+html, body{min-height:100%;}
+body{height:100vh;}
+
+.text-nav {
+    color: #b6b6b6;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -.25px;
+    line-height: 1.5em;
+    white-space: pre-line;
+    
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.text-nav:hover {
+    color: #254dff;
+    font-family: 'DM Sans', sans-serif;
+    opacity: 1;
+    font-weight: 700;
+    letter-spacing: -.45px
+    
+}
+
+.auto-words{
+    position: fixed;
+    z-index: 0;
+    color: #fff;
+}
+
+/*lottie icon wpp*/
+.fab {
+    position: fixed;
+    /* bottom: 300px;    
+    cursor: pointer;
+    z-index: 1;
+    left: 10px; */
+    
+}
+
+.bg-git2 {
+    background-color: #22272E;
+}
+
+.bg-git {
+    background-color: #2D333B ;
+}
+
+.words {
+    color: #b6b6b6;
+    font-family: 'Nanum', monospace;
+    line-height: 1.6em;
+    margin: 0;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.word {
+    color: #b6b6b6;
+    font-family: 'Nanum', monospace;
+}
