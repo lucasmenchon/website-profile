@@ -65,3 +65,7 @@ body{height:100vh;}
     font-family: 'DM Sans', sans-serif;
     text-decoration: none;
 }
+
+.rownav {
+    padding: 10px;
+}
