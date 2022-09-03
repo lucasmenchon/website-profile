@@ -19,11 +19,9 @@ body{height:100vh;}
 }
 
 .text-nav:hover {
-    color: #254dff;
+    color: #4d6bf5;
     font-family: 'DM Sans', sans-serif;
     opacity: 1;
-    font-weight: 700;
-    letter-spacing: -.45px
     
 }
 
@@ -35,11 +33,10 @@ body{height:100vh;}
 
 /*lottie icon wpp*/
 .fab {
-    position: fixed;
-    /* bottom: 300px;    
+     position: fixed;
+    /* bottom: 500px;    
     cursor: pointer;
-    z-index: 1;
-    left: 10px; */
+    z-index: 0;*/
     
 }
 
@@ -68,4 +65,8 @@ body{height:100vh;}
 
 .rownav {
     padding: 10px;
+}
+
+.fixnav {
+    position: fixed;
 }

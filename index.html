@@ -12,30 +12,18 @@
 
 <body class="bg-git2" id="inicio">
 
-    <div id="principal-container">
-        <div class="pt-2 pb-2 sticky-top rounded-bottom bg-git">
-            <div class="container">
-                <div class="row rownav">
-                    <div class="col-md-8">
-                        <div class="row row-cols-4 d-flex justify-content-start">
-                            <div class="col-sm-1">
-                                <a class="text-nav" href="#inicio">Inicio</a>
-                            </div>
-                            <div class="col-sm-1 p-0">
-                                <a class="text-nav" href="#sobre">Sobre</a>
-                            </div>
-                            <div class="col-sm-1 ps-0">
-                                <a class="text-nav" href="#experiencia">Experiência</a>
-                            </div>
-                            <div class="col-sm-1 ps-4">
-                                <a class="text-nav" href="#contato">Contato</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div id="principal">
+        <div class="pt-2 pb-2 rounded-bottom bg-git shadow sticky-top">
+            <div class="container ">
+                <ul class="nav p-1 justify-content-center">
+                    <li class="nav-item"><a href="#" class="nav-link p-0 mx-2 text-nav">Inicio</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link p-0 mx-2 text-nav">Sobre</a></li>
+                    <li class="nav-item"><a href="#experiencia" class="nav-link p-0 mx-2 text-nav">Experiência</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link p-0 mx-2 text-nav">Contato</a></li>
+                </ul>
             </div>
         </div>
-        <div class="container text-center pt-3 pb-4 bg-git2 rounded mt-4" id="start-page">
+        <div class="container text-center pt-3 pb-5 bg-git2 rounded mt-4 mb-5" id="start-page">
             <div class="row">
                 <div class="col-sm-5">
                     <div class="row">
@@ -93,23 +81,24 @@
                                 </svg></a>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <img class="mt-4 d-flex justify-content-start"
-                            src="https://readme-typing-svg.herokuapp.com?font=DM+Sans&size=16&duration=2000&pause=1500&color=A3A2AA&width=298&lines=Bem+Vindo+ao+meu+site.;Trabalho+com+Desenvolvimento+Web.;C%23+ASP.NET+VUE+HTML+CSS+BOOTSTRAP"
-                            alt="Typing SVG" />
+                    <div class="col">
+                        <div class="col-5 d-flex justify-content-start">
+                            <img class="mt-4"
+                                src="https://readme-typing-svg.herokuapp.com?font=DM+Sans&size=16&duration=2000&pause=1500&color=A3A2AA&width=298&lines=Bem+Vindo+ao+meu+site.;Trabalho+com+Desenvolvimento+Web.;C%23+ASP.NET+VUE+HTML+CSS+BOOTSTRAP"
+                                alt="Typing SVG" />
+                        </div>
                     </div>
-                    <div class="fab mt-2">
-                        <a href="https://wa.me/message/PMGGTQIJXHVMH1" target="blank">
 
-                            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_dyf5lscb.json"
-                                speed="1.20" style="width: 38px; height: 40px;" loop autoplay background="transparent">
-                            </lottie-player>
-
-                        </a>
-                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="d-flex justify-content-center">
+                <div class="col-sm-6 d-flex justify-content-end">
+
+                    <a href="https://wa.me/message/PMGGTQIJXHVMH1" class="fab" target="blank">
+
+                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_dyf5lscb.json" speed="1.20"
+                            style="width: 38px; height: 40px;" loop autoplay background="transparent">
+                        </lottie-player>
+                    </a>
+                    <div class="col">
                         <img src=" image/profile-original.png" class="img-fluid" alt="...">
                         <!-- div to put image-->
                     </div>
@@ -533,7 +522,7 @@
         <!--FOOTER-->
         <div class="container-fluid">
             <footer class="d-flex flex-wrap justify-content-center align-items-center pb-2 m-0 border-top">
-                <a class="col-md-4 mb-0 text-muted pt-2 word" href="files/lucasmenchon_privacypolicy_pt-br.pdf"
+                <a class="col-md-4 mb-0 text-muted pt-2 word" href="files/luccas.dev_privacypolicy_pt-br.pdf"
                     target="_blank">Politica de Privacidade</a>
 
                 <p href="/"
@@ -546,22 +535,20 @@
                 </ul>
             </footer>
         </div>
-    </div>
+        <script type="text/javascript"
+            src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script>
+            var webapp = new Vue({
+                el: '#principal',
+                data: {
+                    content: true,
+                }
+            })
+        </script>
     </div>
-    <script type="text/javascript"
-        src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script>
-        var webapp = new Vue({
-            el: '#principal-container',
-            data: {
-                content: true,
-            }
-        })
-    </script>
 </body>
 
 </html>
