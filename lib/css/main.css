@@ -34,10 +34,8 @@ body{height:100vh;}
 /*lottie icon wpp*/
 .fab {
      position: fixed;
-    /* bottom: 500px;    
+     z-index: 1;      
     cursor: pointer;
-    z-index: 0;*/
-    
 }
 
 .bg-git2 {
