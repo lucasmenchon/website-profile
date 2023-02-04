@@ -12,8 +12,7 @@ body{height:100vh;}
     font-weight: 400;
     letter-spacing: -.25px;
     line-height: 1.5em;
-    white-space: pre-line;
-    
+    white-space: pre-line;    
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
