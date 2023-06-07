@@ -30,10 +30,15 @@
                 </ul>
             </div>
         </div>
+
+        <button @click="changeLanguage">Mudar idioma</button>
+        <google-translate v-model="textTranslation"></google-translate>
+
         <div class="container">
             <div class="d-flex justify-content-center">
                 <div>
-                    <img src="https://readme-typing-svg.herokuapp.com?font=Open+Sans&size=16&duration=2000&pause=1000&color=4D6BF5&center=true&vCenter=true&width=435&lines=Bem+vindo+ao+meu+site;Trabalho+principalmente+com;.NET+%E2%80%A2+C%23+%E2%80%A2+JavaScript+%E2%80%A2+ASP.NET+%E2%80%A2+Vue.js+" alt="Typing SVG" />
+                    <img src="https://readme-typing-svg.herokuapp.com?font=Open+Sans&size=16&duration=2000&pause=1000&color=4D6BF5&center=true&vCenter=true&width=435&lines=Bem+vindo+ao+meu+site;Trabalho+principalmente+com;.NET+%E2%80%A2+C%23+%E2%80%A2+JavaScript+%E2%80%A2+ASP.NET+%E2%80%A2+Vue.js+"
+                        alt="Typing SVG" />
                 </div>
             </div>
             <div class="d-flex justify-content-center p-0">
@@ -93,7 +98,7 @@
 
         <section id="projetos" class="py-5 word justify-content-center">
             <div class="container">
-                <h2 class="text-center pb-5">Projetos</h2>
+                <h2 class="text-center pb-5">Projetos Pessoais</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card bg-git2 words h-100">
@@ -340,11 +345,11 @@
 
                 <div class="col-12">
                     <p>Posso ajudar com:</p>
-                    <p><i class="bi bi-check-lg"></i> .NET • C# • JavaScript • ASP.NET • Vue.js
+                    <p><i class="bi bi-check-lg"></i> .NET • C# • JavaScript • ASP.NET • Vue.js • Ajax
                     </p>
-                    <p><i class="bi bi-check-lg"></i> HTML • BootStrap • CSS • Ajax
+                    <p><i class="bi bi-check-lg"></i> MySql • Sql Server • FireBird • Elastic(NoSQL)
                     </p>
-                    <p><i class="bi bi-check-lg"></i> MySql • Sql Server • FireBird • Elastic
+                    <p><i class="bi bi-check-lg"></i> HTML • BootStrap • CSS
                     </p>
                     <br>
                     <p><a href="https://t.me/lucasmenchon" class="text-nav mx-2" target="_blank">Telegram</a>
@@ -384,7 +389,7 @@
         <div class="container-fluid">
             <footer class="d-flex flex-wrap justify-content-center align-items-center pb-2 m-0 border-top">
                 <div class="col-md-4 pt-2 ">
-                    <a class=" mb-0 text-secondary word" href="files/luccas.dev_privacypolicy_pt-br.pdf"
+                    <a class=" mb-0 text-secondary word" href="files/pt-br/luccas.dev_privacypolicy_pt-br.pdf"
                         target="_blank">Politica de Privacidade</a>
                 </div>
                 <p href="/"
@@ -402,23 +407,23 @@
             </footer>
         </div>
 
-        <script type="text/javascript"
-            src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js"></script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-
         <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script>
             var webapp = new Vue({
                 el: '#principal',
+                components: {
+                    'google-translate': Translator
+                },
                 data: {
-
+                    textTranslation: '',
                 },
                 watch: {
 
                 },
                 methods: {
-
+                    
                 },
             })
         </script>
